@@ -45,14 +45,4 @@ struct ListCell: View {
             .foregroundColor(.white)
             .listRowSeparator(.hidden)
     }
-    
-    private func showView() {
-        print("tapped on the arrow")
-    }
-    
-    struct HolaView: View {
-        var body: some View {
-            Text("Hola, como estas?")
-        }
-    }
 }
