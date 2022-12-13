@@ -11,26 +11,48 @@ import SwiftUI
 struct ListCell: View {
     var title: String
     
-var body: some View {
-        ZStack(alignment: .leading) {
-            HStack {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.white)
-                Text(title)
-                Spacer()
-                Image(systemName: "arrow.right")
-                    .foregroundColor(.white)
+    @State private var isChecked = false
+    @State private var showStateDetails = false
+    @State private var path = NavigationPath()
+    
+    var body: some View {
+            ZStack(alignment: .leading) {
+                HStack {
+                    Button(action: {}) {
+                        if isChecked {
+                            Image(systemName: "checkmark")
+                                .foregroundColor(.white)
+                        } else {
+                            Image(systemName: "squareshape")
+                        }
+                    } .onTapGesture {
+                        isChecked = !isChecked
+                    }
+                    Text(title)
+                    Spacer()
+                    Button(action: { }) {
+                        Image(systemName: "arrow.right")
+                            .foregroundColor(.white)
+                    }
+                    .background(
+                        NavigationLink(destination: Text(title)) {
+                        EmptyView() })
+                }
             }
-            
-            NavigationLink(destination: Text(title)) {
-                EmptyView()
-            }
-            .opacity(0.0)
+            .frame(height: 50)
+            .padding(.horizontal)
+            .background(Color.orange.gradient, in: RoundedRectangle(cornerRadius: 20))
+            .foregroundColor(.white)
+            .listRowSeparator(.hidden)
+    }
+    
+    private func showView() {
+        print("tapped on the arrow")
+    }
+    
+    struct HolaView: View {
+        var body: some View {
+            Text("Hola, como estas?")
         }
-        .frame(height: 50)
-        .padding(.horizontal)
-        .background(Color.orange.gradient, in: RoundedRectangle(cornerRadius: 20))
-        .foregroundColor(.white)
-        .listRowSeparator(.hidden)
     }
 }
