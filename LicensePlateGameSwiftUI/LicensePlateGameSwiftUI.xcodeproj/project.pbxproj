@@ -16,6 +16,8 @@
 		E4B4132D293A4A6100894E31 /* LicensePlateGameSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4132C293A4A6100894E31 /* LicensePlateGameSwiftUIUITestsLaunchTests.swift */; };
 		E4B4133A293A4CDC00894E31 /* LicensePlateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B41339293A4CDC00894E31 /* LicensePlateModel.swift */; };
 		E4B4133C293A501B00894E31 /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4133B293A501B00894E31 /* StateCell.swift */; };
+		E4C6A608294D42E600FB84FE /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6A607294D42E600FB84FE /* DataModel.swift */; };
+		E4C6A60A294D432C00FB84FE /* LicensePlateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6A609294D432C00FB84FE /* LicensePlateItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		E4B4132C293A4A6100894E31 /* LicensePlateGameSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePlateGameSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E4B41339293A4CDC00894E31 /* LicensePlateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePlateModel.swift; sourceTree = "<group>"; };
 		E4B4133B293A501B00894E31 /* StateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
+		E4C6A607294D42E600FB84FE /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		E4C6A609294D432C00FB84FE /* LicensePlateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensePlateItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				E4B41315293A4A6000894E31 /* Preview Content */,
 				E4B41339293A4CDC00894E31 /* LicensePlateModel.swift */,
 				E4B4133B293A501B00894E31 /* StateCell.swift */,
+				E4C6A607294D42E600FB84FE /* DataModel.swift */,
+				E4C6A609294D432C00FB84FE /* LicensePlateItem.swift */,
 			);
 			path = LicensePlateGameSwiftUI;
 			sourceTree = "<group>";
@@ -263,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C6A608294D42E600FB84FE /* DataModel.swift in Sources */,
 				E4B4133A293A4CDC00894E31 /* LicensePlateModel.swift in Sources */,
 				E4B41312293A4A5D00894E31 /* ContentView.swift in Sources */,
 				E4B41310293A4A5D00894E31 /* LicensePlateGameSwiftUIApp.swift in Sources */,
 				E4B4133C293A501B00894E31 /* StateCell.swift in Sources */,
+				E4C6A60A294D432C00FB84FE /* LicensePlateItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
